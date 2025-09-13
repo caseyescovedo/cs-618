@@ -12,11 +12,11 @@ import {
 import { Post } from '../db/models/post.js'
 
 const samplePosts = [
-  { title: 'Learning Redux', author: 'Daniel Bugl', tags: ['redux'] },
-  { title: 'Learn React Hooks', author: 'Daniel Bugl', tags: ['react'] },
+  { title: 'Learning Redux', author: 'Casey Escovedo', tags: ['redux'] },
+  { title: 'Learn React Hooks', author: 'Casey Escovedo', tags: ['react'] },
   {
     title: 'Full-Stack React Projects',
-    author: 'Daniel Bugl',
+    author: 'Casey Escovedo',
     tags: ['react', 'nodejs'],
   },
   { title: 'Guide to TypeScript' },
@@ -110,7 +110,7 @@ describe('listing posts', () => {
     )
   })
   test('should be able to filter posts by author', async () => {
-    const posts = await listPostsByAuthor('Daniel Bugl')
+    const posts = await listPostsByAuthor('Casey Escovedo')
     expect(posts.length).toBe(3)
   })
   test('should be able to filter posts by tag', async () => {
